@@ -5,7 +5,9 @@ const Button = ({props}) => {
     const { buttonLabel, buttonDestination } = props;
 
   return (
-   <button>{buttonLabel}</button>
+    <div className='main-button'>
+      <button>{buttonLabel}</button>
+    </div>
   )
 }
 

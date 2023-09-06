@@ -33,7 +33,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 40px;
-    background: #D5FF3F;
+    background: $tertiary-color;
     border: none;
 }
 
@@ -45,6 +45,22 @@
     font-weight: 500;
     line-height: normal;
     text-decoration-line: underline;
+}
+
+@mixin icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 32px;
+    background: $tertiary-color;
+}
+
+@mixin about-me-card-style {
+    display: flex;
+    width: 287px;
+    padding: 24px 24px 24px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 @mixin H1 {
@@ -64,4 +80,25 @@
     line-height: 120%;
     letter-spacing: -0.36px;
     color: $secondary-color;
+}
+
+@mixin H3-WOU {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+@mixin H3 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    text-decoration-color: $secondary-color;
 }

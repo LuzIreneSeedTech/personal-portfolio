@@ -1,0 +1,45 @@
+@mixin css-reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin logo-text-style {
+    color: $tertiary-color;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: $tertiary-color;
+    font-weight: 700;
+}
+
+@mixin button-text-style {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@mixin H1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+@mixin nav-link-item-hover-effect {
+    color: #D5FF3F;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}

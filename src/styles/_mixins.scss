@@ -20,10 +20,31 @@
 }
 
 @mixin button-text-style {
-    color: #FFF;
+    color: $main-color;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
+}
+
+@mixin button-style {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #D5FF3F;
+    border: none;
+}
+
+@mixin nav-link-item-hover-effect {
+    color: $tertiary-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
 }
 
 @mixin H1 {
@@ -32,14 +53,15 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
-@mixin nav-link-item-hover-effect {
-    color: #D5FF3F;
+@mixin paragraph {
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+    color: $secondary-color;
 }

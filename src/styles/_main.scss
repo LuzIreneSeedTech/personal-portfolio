@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 
     .logo-container {
         @include logo-text-style;
@@ -32,6 +33,7 @@
                 color: $main-color;
                 font-size: 18px;
                 text-align: center;
+                font-weight: 500;
             }
 
             .nav-link-item:hover {
@@ -61,3 +63,87 @@
     }
 }
 // header end
+
+// landing start
+.landing-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+    width: 1152px;
+    margin: auto;
+
+    .landing-page-content {
+        // background: #82817F;
+        width: 468px;
+        height: 288px;
+        gap: 35px;
+        display: flex;
+        flex-direction: column;
+
+        .landing-header-text {
+            h1 {
+                @include H1;
+            }
+
+            .header-text-2 {
+                text-align: end;
+            }
+        }
+
+        .landing-short-intro {
+            @include paragraph;
+        }
+
+        .landing-page-button {
+            button {
+                @include button-style;
+                @include button-text-style;
+                font-weight: 700 !important;
+                color: $secondary-color;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: $secondary-color;
+                color: $main-color;
+            }
+        }
+    }
+
+    .landing-page-img {
+        // background: #82817F;
+        width: 504px;
+        height: 524px;
+        position: relative;
+        @include flex-center;
+
+        img {
+            width: 400px;
+            height: 524px;
+            border-radius: 70px;
+        }
+
+        h1 {
+            @include H1;
+            font-size: 35px !important;
+
+            span {
+                color: $tertiary-color;
+            }
+        }
+
+        .img-text-1 {
+            position: absolute;
+            top: 80px;
+            left: 32px;
+        }
+
+        .img-text-2 {
+            position: absolute;
+            bottom: 86px;
+            right: 1px;
+        }
+    }
+}
+// landing end

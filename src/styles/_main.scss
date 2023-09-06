@@ -94,21 +94,6 @@
         .landing-short-intro {
             @include paragraph;
         }
-
-        .landing-page-button {
-            button {
-                @include button-style;
-                @include button-text-style;
-                font-weight: 700 !important;
-                color: $secondary-color;
-                cursor: pointer;
-            }
-
-            button:hover {
-                background: $secondary-color;
-                color: $main-color;
-            }
-        }
     }
 
     .landing-page-img {
@@ -147,3 +132,132 @@
     }
 }
 // landing end
+
+// about me start
+.about-me {
+        width: 1152px;
+        margin: auto;
+
+        .about-me-container {
+            margin-top: 130px;
+
+            .about-me-content {
+                display: flex;
+                justify-content: center;
+                gap: 47px;
+                margin-top: 50px;
+
+                .about-me-left-part, .about-me-right-part {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 119px;
+
+                    .about-me-card {
+                        @include about-me-card-style;
+                    }
+                }
+
+                .about-me-center-part {
+                    width: 483px;
+                    height: 467px;
+                    margin: auto;
+                    position: relative;
+                    @include flex-center;
+
+                    img {
+                        width: 349px;
+                        height: 443px;
+                        border-radius: 70px;
+                    }
+
+                    h1 {
+                        span {
+                            color: $main-color;
+                        }
+                    }
+
+                    .about-img-txt-1, .about-img-txt-2 {
+                        @include H3-WOU;
+                    }
+
+                    .about-img-txt-3, .about-img-txt-4 {
+                        @include H3;
+                        text-decoration-line: line-through;
+
+                        span {
+                            text-decoration-line: line-through;
+                        }
+                    }
+
+                    .about-img-txt-1 {
+                        writing-mode: vertical-rl;
+                        text-orientation: upright;
+                        position: absolute;
+                        top: -12px;
+                        left: 136px;
+                    }
+
+                    .about-img-txt-2 {
+                        position: absolute;
+                        right: 13px;
+                        bottom: 110px;
+                    }
+
+                    .about-img-txt-3 {
+                        position: absolute;
+                        top: 155px;
+                        right: 49px;
+                    }
+
+                    .about-img-txt-4 {
+                        position: absolute;
+                        bottom: 175px;
+                        left: 1px;
+                    }
+                }
+            }
+        }
+}
+// about me end
+
+// components start
+.main-button {
+    button {
+        @include button-style;
+        @include button-text-style;
+        font-weight: 700 !important;
+        color: $secondary-color;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: $secondary-color;
+        color: $main-color;
+    }
+}
+
+.section-header {
+    h1 {
+        @include H3-WOU;
+        text-align: center
+    }
+}
+
+.icon-container {
+    @include icon;
+}
+
+.about-me-card {
+    position: relative;
+    @include about-me-card-style;
+
+    .about-me-card-header {
+        @include H3-WOU;
+        font-size: 20px;
+    }
+
+    .about-me-card-content {
+        @include paragraph;
+    }
+}
+// components end

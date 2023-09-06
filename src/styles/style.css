@@ -106,27 +106,6 @@
   letter-spacing: -0.36px;
   color: #000;
 }
-.landing-page-container .landing-page-content .landing-page-button button {
-  display: flex;
-  padding: 15px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 40px;
-  background: #D5FF3F;
-  border: none;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 500;
-  font-weight: 700 !important;
-  color: #000;
-  cursor: pointer;
-}
-.landing-page-container .landing-page-content .landing-page-button button:hover {
-  background: #000;
-  color: #fff;
-}
 .landing-page-container .landing-page-img {
   width: 504px;
   height: 524px;
@@ -161,4 +140,162 @@
   position: absolute;
   bottom: 86px;
   right: 1px;
+}
+
+.about-me {
+  width: 1152px;
+  margin: auto;
+}
+.about-me .about-me-container {
+  margin-top: 130px;
+}
+.about-me .about-me-container .about-me-content {
+  display: flex;
+  justify-content: center;
+  gap: 47px;
+  margin-top: 50px;
+}
+.about-me .about-me-container .about-me-content .about-me-left-part, .about-me .about-me-container .about-me-content .about-me-right-part {
+  display: flex;
+  flex-direction: column;
+  gap: 119px;
+}
+.about-me .about-me-container .about-me-content .about-me-left-part .about-me-card, .about-me .about-me-container .about-me-content .about-me-right-part .about-me-card {
+  display: flex;
+  width: 287px;
+  padding: 24px 24px 24px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part {
+  width: 483px;
+  height: 467px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part img {
+  width: 349px;
+  height: 443px;
+  border-radius: 70px;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part h1 span {
+  color: #fff;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-1, .about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-2 {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-3, .about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-4 {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  text-decoration-color: #000;
+  text-decoration-line: line-through;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-3 span, .about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-4 span {
+  text-decoration-line: line-through;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: absolute;
+  top: -12px;
+  left: 136px;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-2 {
+  position: absolute;
+  right: 13px;
+  bottom: 110px;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-3 {
+  position: absolute;
+  top: 155px;
+  right: 49px;
+}
+.about-me .about-me-container .about-me-content .about-me-center-part .about-img-txt-4 {
+  position: absolute;
+  bottom: 175px;
+  left: 1px;
+}
+
+.main-button button {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #D5FF3F;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  font-weight: 700 !important;
+  color: #000;
+  cursor: pointer;
+}
+.main-button button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.section-header h1 {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 32px;
+  background: #D5FF3F;
+}
+
+.about-me-card {
+  position: relative;
+  display: flex;
+  width: 287px;
+  padding: 24px 24px 24px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.about-me-card .about-me-card-header {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.about-me-card .about-me-card-content {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.36px;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

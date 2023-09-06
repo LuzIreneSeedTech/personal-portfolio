@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.nav-container {
+  padding: 10px 60px;
+  width: 90%;
+  height: 70px;
+  background: #000;
+  border-radius: 40px;
+  position: fixed;
+  top: 3%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container .logo-container {
+  color: #D5FF3F;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #D5FF3F;
+  font-weight: 700;
+}
+.nav-container .nav-items-container .nav-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+.nav-container .nav-items-container .nav-link-container .nav-link-item {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.nav-container .nav-items-container .nav-link-container .nav-link-item:hover {
+  color: #D5FF3F;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-align: center;
+}
+.nav-container .contact-me-btn-container button {
+  border-radius: 40px;
+  border: 0.5px solid #FFF;
+  padding: 15px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-container .contact-me-btn-container button:hover {
+  background: #D5FF3F;
+  border: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

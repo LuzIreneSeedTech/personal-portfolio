@@ -1,0 +1,63 @@
+* {
+    @include css-reset;
+}
+
+// header start
+.nav-container {
+    padding: 10px 60px;
+    width: 90%;
+    height: 70px;
+    background: $secondary-color;
+    border-radius: 40px;
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-container {
+        @include logo-text-style;
+    }
+
+    .nav-items-container {
+
+        .nav-link-container {
+            @include flex-center;
+            gap: 20px;
+            list-style-type: none;
+
+            .nav-link-item {
+                text-decoration: none;
+                color: $main-color;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .nav-link-item:hover {
+                @include nav-link-item-hover-effect;
+                text-align: center;
+            }
+        }
+    }
+
+    .contact-me-btn-container {
+
+        button {
+            border-radius: 40px;
+            border: 0.5px solid #FFF;
+            padding: 15px;
+            background: transparent;
+            cursor: pointer;
+            @include flex-center;
+            @include button-text-style;
+        }
+
+        button:hover {
+            background: #D5FF3F;
+            border: none;
+            color: #000;
+        }
+    }
+}
+// header end

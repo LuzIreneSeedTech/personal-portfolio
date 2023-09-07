@@ -102,3 +102,13 @@
     text-transform: uppercase;
     text-decoration-color: $secondary-color;
 }
+
+@mixin H4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    text-transform: capitalize;
+}

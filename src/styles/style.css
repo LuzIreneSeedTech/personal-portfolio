@@ -318,6 +318,54 @@
   margin-top: 50px;
 }
 
+.tools {
+  width: 1152px;
+  margin: auto;
+}
+.tools .tools-container {
+  margin-top: 130px;
+}
+.tools .tools-container .tools-header {
+  margin-bottom: 100px;
+}
+.tools .tools-container .tools-card-container {
+  width: 960px;
+  gap: 90px 40px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.tools .tools-container .tools-card-container .tools-card {
+  background: #D5FF3F;
+  width: 130px;
+  padding: 50px 30px 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+  border-radius: 20px;
+  position: relative;
+}
+.tools .tools-container .tools-card-container .tools-card img {
+  width: 100px;
+  height: 96px;
+  position: absolute;
+  left: 15px;
+  top: -46px;
+}
+.tools .tools-container .tools-card-container .tools-card h4 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  text-transform: capitalize;
+}
+
 .main-button button {
   display: flex;
   padding: 15px;

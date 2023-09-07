@@ -5,6 +5,7 @@ import Landing from "./organisms/Landing";
 import AboutMe from "./organisms/AboutMe";
 import Projects from "./organisms/Projects";
 import Tools from "./organisms/Tools";
+import ContactMe from "./organisms/ContactMe";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
 
       <div className="tools">
         <Tools />
+      </div>
+
+      <div className="contact-me">
+        <ContactMe />
       </div>
     </>
   );

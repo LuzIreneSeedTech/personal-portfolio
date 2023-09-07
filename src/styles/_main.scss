@@ -1,0 +1,399 @@
+* {
+    @include css-reset;
+}
+
+// header start
+.nav-container {
+    padding: 10px 60px;
+    width: 90%;
+    height: 70px;
+    background: $secondary-color;
+    border-radius: 40px;
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    .logo-container {
+        @include logo-text-style;
+    }
+
+    .nav-items-container {
+
+        .nav-link-container {
+            @include flex-center;
+            gap: 20px;
+            list-style-type: none;
+
+            .nav-link-item {
+                text-decoration: none;
+                color: $main-color;
+                font-size: 18px;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .nav-link-item:hover {
+                @include nav-link-item-hover-effect;
+                text-align: center;
+            }
+        }
+    }
+
+    .contact-me-btn-container {
+
+        button {
+            border-radius: 40px;
+            border: 0.5px solid #FFF;
+            padding: 15px;
+            background: transparent;
+            cursor: pointer;
+            @include flex-center;
+            @include button-text-style;
+        }
+
+        button:hover {
+            background: #D5FF3F;
+            border: none;
+            color: #000;
+        }
+    }
+}
+// header end
+
+// landing start
+.landing-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+    width: 1152px;
+    margin: auto;
+
+    .landing-page-content {
+        width: 468px;
+        height: 288px;
+        gap: 35px;
+        display: flex;
+        flex-direction: column;
+
+        .landing-header-text {
+            h1 {
+                @include H1;
+            }
+
+            .header-text-2 {
+                text-align: end;
+            }
+        }
+
+        .landing-short-intro {
+            @include paragraph;
+        }
+    }
+
+    .landing-page-img {
+        width: 504px;
+        height: 524px;
+        position: relative;
+        @include flex-center;
+
+        img {
+            width: 400px;
+            height: 524px;
+            border-radius: 70px;
+        }
+
+        h1 {
+            @include H1;
+            font-size: 35px !important;
+
+            span {
+                color: $tertiary-color;
+            }
+        }
+
+        .img-text-1 {
+            position: absolute;
+            top: 80px;
+            left: 32px;
+        }
+
+        .img-text-2 {
+            position: absolute;
+            bottom: 86px;
+            right: 1px;
+        }
+    }
+}
+// landing end
+
+// about me start
+.about-me {
+        width: 1152px;
+        margin: auto;
+
+        .about-me-container {
+            margin-top: 130px;
+
+            .about-me-content {
+                display: flex;
+                justify-content: center;
+                gap: 47px;
+                margin-top: 50px;
+
+                .about-me-left-part, .about-me-right-part {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 119px;
+
+                    .about-me-card {
+                        @include about-me-card-style;
+                    }
+                }
+
+                .about-me-center-part {
+                    width: 483px;
+                    height: 467px;
+                    margin: auto;
+                    position: relative;
+                    @include flex-center;
+
+                    img {
+                        width: 349px;
+                        height: 443px;
+                        border-radius: 70px;
+                    }
+
+                    h1 {
+                        span {
+                            color: $main-color;
+                        }
+                    }
+
+                    .about-img-txt-1, .about-img-txt-2 {
+                        @include H3-WOU;
+                    }
+
+                    .about-img-txt-3, .about-img-txt-4 {
+                        @include H3;
+                        text-decoration-line: line-through;
+
+                        span {
+                            text-decoration-line: line-through;
+                        }
+                    }
+
+                    .about-img-txt-1 {
+                        writing-mode: vertical-rl;
+                        text-orientation: upright;
+                        position: absolute;
+                        top: -12px;
+                        left: 136px;
+                    }
+
+                    .about-img-txt-2 {
+                        position: absolute;
+                        right: 13px;
+                        bottom: 110px;
+                    }
+
+                    .about-img-txt-3 {
+                        position: absolute;
+                        top: 155px;
+                        right: 49px;
+                    }
+
+                    .about-img-txt-4 {
+                        position: absolute;
+                        bottom: 175px;
+                        left: 1px;
+                    }
+                }
+            }
+        }
+}
+// about me end
+
+// projects start
+.projects {
+    width: 1152px;
+    margin: auto;
+
+    .project-container {
+        margin-top: 130px;
+
+        .project-content {
+            @include flex-center;
+            flex-direction: column;
+            margin-top: 50px;
+    
+            .filter-button-container {
+                display: flex;
+                gap: 12px;
+    
+                button {
+                    background: $secondary-color;
+                    color: $main-color;
+                }
+    
+                button:hover {
+                    background-color: $tertiary-color;
+                    color: $secondary-color;
+                }
+            }
+
+            .project-card-container {
+                width: 964px;
+                @include flex-center;
+                gap: 30px;
+                flex-wrap: wrap;
+                margin-top: 50px;
+
+                .project-card {
+                    position: relative;
+
+                    img {
+                        width: 300px;
+                        height: 225px;
+                        border-radius: 20px;
+                    }
+
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                        background: $secondary-color;
+                        @include flex-center;
+                        flex-direction: column;
+                        opacity: 0;
+                        transition: opacity 0.3s;
+                        gap: 40px;
+
+                        h4 {
+                            color: $tertiary-color;
+                            @include H4;
+                            text-align: center;
+                        }
+
+                        button {
+                            border: 1px solid $main-color;
+                            background: none;
+                            color: $main-color;
+                        }
+
+                        button:hover {
+                            background: $tertiary-color;
+                            color: $secondary-color;
+                            border: none;
+                        }
+                    }
+
+                    .overlay:hover {
+                        opacity: 1;
+                    }
+                   
+                }
+            }
+
+            .project-btn-container {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+// projects end
+
+// tools start
+.tools {
+    width: 1152px;
+    margin: auto;
+
+    .tools-container {
+        margin-top: 130px;
+
+        .tools-header {
+            margin-bottom: 100px;
+        }
+
+        .tools-card-container {
+            width: 960px;
+            gap: 90px 40px;
+            flex-wrap: wrap;
+            @include flex-center;
+            margin: auto;
+
+            .tools-card {
+                background: $tertiary-color;
+                width: 130px;
+                padding: 50px 30px 20px 30px;
+                @include flex-center;
+                flex-direction: column;
+                gap: 7px;
+                border-radius: 20px;
+                position: relative;
+
+                img {
+                    width: 100px;
+                    height: 96px;
+                    position: absolute;
+                    left: 15px;
+                    top: -46px;
+                }
+
+                h4 {
+                    @include H4;
+                }
+            }
+        }
+    }
+}
+// tools end
+
+// components start
+.main-button {
+    button {
+        @include button-style;
+        @include button-text-style;
+        font-weight: 700 !important;
+        color: $secondary-color;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: $secondary-color;
+        color: $main-color;
+    }
+}
+
+.section-header {
+    h1 {
+        @include H3-WOU;
+        text-align: center
+    }
+}
+
+.icon-container {
+    @include icon;
+}
+
+.about-me-card {
+    position: relative;
+    @include about-me-card-style;
+
+    .about-me-card-header {
+        @include H3-WOU;
+        font-size: 20px;
+    }
+
+    .about-me-card-content {
+        @include paragraph;
+    }
+}
+// components end

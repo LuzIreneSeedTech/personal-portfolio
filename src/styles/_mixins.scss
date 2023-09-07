@@ -1,0 +1,114 @@
+@mixin css-reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin logo-text-style {
+    color: $tertiary-color;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: $tertiary-color;
+    font-weight: 700;
+}
+
+@mixin button-text-style {
+    color: $main-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@mixin button-style {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: $tertiary-color;
+    border: none;
+}
+
+@mixin nav-link-item-hover-effect {
+    color: $tertiary-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+@mixin icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 32px;
+    background: $tertiary-color;
+}
+
+@mixin about-me-card-style {
+    display: flex;
+    width: 287px;
+    padding: 24px 24px 24px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+@mixin H1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+@mixin paragraph {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+    color: $secondary-color;
+}
+
+@mixin H3-WOU {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+@mixin H3 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    text-decoration-color: $secondary-color;
+}
+
+@mixin H4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    text-transform: capitalize;
+}

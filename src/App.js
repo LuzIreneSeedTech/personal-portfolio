@@ -4,6 +4,7 @@ import Header from "./organisms/Header";
 import Landing from "./organisms/Landing";
 import AboutMe from "./organisms/AboutMe";
 import Projects from "./organisms/Projects";
+import Tools from "./organisms/Tools";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 
       <div className="projects">
         <Projects />
+      </div>
+
+      <div className="tools">
+        <Tools />
       </div>
     </>
   );

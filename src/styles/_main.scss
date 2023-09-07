@@ -310,6 +310,52 @@
 }
 // projects end
 
+// tools start
+.tools {
+    width: 1152px;
+    margin: auto;
+
+    .tools-container {
+        margin-top: 130px;
+
+        .tools-header {
+            margin-bottom: 100px;
+        }
+
+        .tools-card-container {
+            width: 960px;
+            gap: 90px 40px;
+            flex-wrap: wrap;
+            @include flex-center;
+            margin: auto;
+
+            .tools-card {
+                background: $tertiary-color;
+                width: 130px;
+                padding: 50px 30px 20px 30px;
+                @include flex-center;
+                flex-direction: column;
+                gap: 7px;
+                border-radius: 20px;
+                position: relative;
+
+                img {
+                    width: 100px;
+                    height: 96px;
+                    position: absolute;
+                    left: 15px;
+                    top: -46px;
+                }
+
+                h4 {
+                    @include H4;
+                }
+            }
+        }
+    }
+}
+// tools end
+
 // components start
 .main-button {
     button {

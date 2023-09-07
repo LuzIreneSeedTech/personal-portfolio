@@ -231,6 +231,93 @@
   left: 1px;
 }
 
+.projects {
+  width: 1152px;
+  margin: auto;
+}
+.projects .project-container {
+  margin-top: 130px;
+}
+.projects .project-container .project-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.projects .project-container .project-content .filter-button-container {
+  display: flex;
+  gap: 12px;
+}
+.projects .project-container .project-content .filter-button-container button {
+  background: #000;
+  color: #fff;
+}
+.projects .project-container .project-content .filter-button-container button:hover {
+  background-color: #D5FF3F;
+  color: #000;
+}
+.projects .project-container .project-content .project-card-container {
+  width: 964px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.projects .project-container .project-content .project-card-container .project-card {
+  position: relative;
+}
+.projects .project-container .project-content .project-card-container .project-card img {
+  width: 300px;
+  height: 225px;
+  border-radius: 20px;
+}
+.projects .project-container .project-content .project-card-container .project-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s;
+  gap: 40px;
+}
+.projects .project-container .project-content .project-card-container .project-card .overlay h4 {
+  color: #D5FF3F;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.projects .project-container .project-content .project-card-container .project-card .overlay button {
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+}
+.projects .project-container .project-content .project-card-container .project-card .overlay button:hover {
+  background: #D5FF3F;
+  color: #000;
+  border: none;
+}
+.projects .project-container .project-content .project-card-container .project-card .overlay:hover {
+  opacity: 1;
+}
+.projects .project-container .project-content .project-btn-container {
+  margin-top: 50px;
+}
+
 .main-button button {
   display: flex;
   padding: 15px;

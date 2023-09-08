@@ -444,6 +444,61 @@
 }
 // contact me end
 
+// footer start
+.footer-container {
+    width: 100vw;
+    padding-top: 130px;
+
+    .logo-social-container {
+        width: 100%;
+        height: 295px;
+        background: $secondary-color;
+        @include flex-center;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 100px;
+
+        .footer-logo {
+            @include logo-text-style;
+        }
+
+        .footer-social-container {
+            @include flex-center;
+            gap: 25px;
+
+            .footer-social {
+                width: 50px;
+                height: 50px;
+                padding: 8px 8px 7px 7px;
+                @include flex-center;
+        
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .all-rights-reserved-container {
+        width: 100%;
+        height: 70px;
+        background: $tertiary-color;
+        @include flex-center;
+        padding: 38px 521px;
+
+        h4 {
+            @include H4;
+            font-weight: 500;
+        }
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+// footer end
+
 // components start
 .main-button {
     button {

@@ -6,6 +6,7 @@ import AboutMe from "./organisms/AboutMe";
 import Projects from "./organisms/Projects";
 import Tools from "./organisms/Tools";
 import ContactMe from "./organisms/ContactMe";
+import Footer from "./organisms/Footer";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
       <div className="contact-me">
         <ContactMe />
+      </div>
+
+      <div className="footer">
+        <Footer />
       </div>
     </>
   );

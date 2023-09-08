@@ -29,7 +29,7 @@ const AboutMe = () => {
 
   return (
     <div className='about-me-container'>
-        <div className='about-me-header'>
+        <div className='about-me-header' id="about-me">
             <SectionHeader props={headerData}/>
         </div>
 

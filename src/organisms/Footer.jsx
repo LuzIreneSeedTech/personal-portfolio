@@ -16,10 +16,20 @@ const Footer = () => {
         },
     ]
 
+    const logoToHome = () => {
+        setTimeout(() => {
+            const homeSection = document.getElementById('home');
+            
+            if (homeSection) {
+                homeSection.scrollIntoView({ behavior : 'smooth' })
+            }
+        }, 100)
+    }
+
   return (
     <div className='footer-container'>
       <div className='logo-social-container'>
-        <div className='footer-logo'>
+        <div className='footer-logo' onClick={logoToHome}>
             LUZIRENE.
         </div>
 

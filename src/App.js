@@ -11,24 +11,24 @@ import Footer from "./organisms/Footer";
 function App() {
   return (
     <>
-      <div className="landing">
+      <div className="landing" id="home">
         <Header />
         <Landing />
       </div>
 
-      <div className="about-me">
+      <div className="about-me" id="about-me">
         <AboutMe />
       </div>
 
-      <div className="projects">
+      <div className="projects" id="projects">
         <Projects />
       </div>
 
-      <div className="tools">
+      <div className="tools" id="tools">
         <Tools />
       </div>
 
-      <div className="contact-me">
+      <div className="contact-me" id="contact-me">
         <ContactMe />
       </div>
 

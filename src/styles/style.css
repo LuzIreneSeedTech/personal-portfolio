@@ -472,6 +472,69 @@
   margin: auto;
 }
 
+.footer-container {
+  width: 100vw;
+  padding-top: 130px;
+}
+.footer-container .logo-social-container {
+  width: 100%;
+  height: 295px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 100px;
+}
+.footer-container .logo-social-container .footer-logo {
+  color: #D5FF3F;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #D5FF3F;
+  font-weight: 700;
+}
+.footer-container .logo-social-container .footer-social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.footer-container .logo-social-container .footer-social-container .footer-social {
+  width: 50px;
+  height: 50px;
+  padding: 8px 8px 7px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .logo-social-container .footer-social-container .footer-social img {
+  width: 35px;
+  height: 35px;
+}
+.footer-container .all-rights-reserved-container {
+  width: 100%;
+  height: 70px;
+  background: #D5FF3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 521px;
+}
+.footer-container .all-rights-reserved-container h4 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.footer-container .all-rights-reserved-container span {
+  font-weight: 700;
+}
+
 .main-button button {
   display: flex;
   padding: 15px;

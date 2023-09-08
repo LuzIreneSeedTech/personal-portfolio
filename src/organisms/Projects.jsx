@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SectionHeader from '../atoms/SectionHeader'
 import Button from '../atoms/Button'
 import Project1 from '../assets/project_1.png'
@@ -25,6 +25,8 @@ const Projects = () => {
 
     const ProjectCardData = [
       {
+        id : 1,
+        category : 'design',
         projectCardImg : <img src={Project1} alt="project sample" />,
         projectCardTitle : 'To-do App web Design',
         buttonLabel : {
@@ -32,6 +34,8 @@ const Projects = () => {
         },
       },
       {
+        id : 2,
+        category : 'design',
         projectCardImg : <img src={Project1} alt="project sample" />,
         projectCardTitle : 'Appointment Booking App Web Design',
         buttonLabel : {
@@ -39,6 +43,8 @@ const Projects = () => {
         },
       },
       {
+        id : 3,
+        category : 'design',
         projectCardImg : <img src={Project1} alt="project sample" />,
         projectCardTitle : 'web portfolio web design',
         buttonLabel : {
@@ -46,6 +52,8 @@ const Projects = () => {
         },
       },
       {
+        id : 4,
+        category : 'app',
         projectCardImg : <img src={Project1} alt="project sample" />,
         projectCardTitle : 'To-do web application',
         buttonLabel : {
@@ -53,6 +61,8 @@ const Projects = () => {
         },
       },
       {
+        id : 5,
+        category : 'app',
         projectCardImg : <img src={Project1} alt="project sample" />,
         projectCardTitle : 'appointment booking web app',
         buttonLabel : {
@@ -60,6 +70,8 @@ const Projects = () => {
         },
       },
       {
+        id : 6,
+        category : 'app',
         projectCardImg : <img src={Project1} alt="project sample" />,
         projectCardTitle : 'web portfolio',
         buttonLabel : {
@@ -67,6 +79,36 @@ const Projects = () => {
         },
       },
     ]
+
+    const [cards, setCards] = useState(ProjectCardData);
+
+    const handleBtns = (word) => {
+      switch(word) {
+
+      case "website design":
+        let newCards1 = []
+        ProjectCardData.map((projectCard) => {
+          if(projectCard.category == "design") {
+            newCards1.push(projectCard)
+          }
+        })
+        setCards(newCards1)
+        break;
+
+      case "web development":
+        let newCards2 = []
+        ProjectCardData.map((projectCard) => {
+          if(projectCard.category == "app") {
+            newCards2.push(projectCard)
+          }
+        })
+        setCards(newCards2)
+        break;
+
+      default:
+        setCards(ProjectCardData)
+    }
+  };
 
   return (
     <div className='project-container'>
@@ -79,7 +121,7 @@ const Projects = () => {
           {
             (filterButtonLabel.map((data, index) => {
               return (
-                <Button props={data} key={index} />
+                <Button props={data} key={index} onClick={handleBtns} />
               )
             }))
           }
@@ -87,7 +129,7 @@ const Projects = () => {
 
         <div className='project-card-container'>
           {
-            (ProjectCardData.map((data, index) => {
+            (cards.map((data, index) => {
               return (
                 <ProjectCards props={data} key={index} />
               )

@@ -26,6 +26,10 @@
   letter-spacing: 1px;
   color: #D5FF3F;
   font-weight: 700;
+  cursor: pointer;
+}
+.nav-container .logo-container:hover {
+  color: #fff;
 }
 .nav-container .nav-items-container .nav-link-container {
   display: flex;
@@ -145,6 +149,7 @@
 .about-me {
   width: 1152px;
   margin: auto;
+  scroll-margin-top: 8rem;
 }
 .about-me .about-me-container {
   margin-top: 130px;
@@ -234,6 +239,7 @@
 .projects {
   width: 1152px;
   margin: auto;
+  scroll-margin-top: 8rem;
 }
 .projects .project-container {
   margin-top: 130px;
@@ -320,7 +326,9 @@
 
 .tools {
   width: 1152px;
+  height: 425px;
   margin: auto;
+  scroll-margin-top: 8rem;
 }
 .tools .tools-container {
   margin-top: 130px;
@@ -493,6 +501,10 @@
   letter-spacing: 1px;
   color: #D5FF3F;
   font-weight: 700;
+  cursor: pointer;
+}
+.footer-container .logo-social-container .footer-logo:hover {
+  color: #fff;
 }
 .footer-container .logo-social-container .footer-social-container {
   display: flex;

@@ -8,6 +8,16 @@ const Landing = () => {
         buttonLabel : 'view projects',
     }
 
+    const navigateToProjects = () => {
+      setTimeout(() => {
+        const projectSection = document.getElementById('projects');
+
+        if (projectSection) {
+          projectSection.scrollIntoView({ behavior : 'smooth' })
+        }
+      }, 100)
+    }
+
   return (
     <div className='landing-page-container'>
       <div className='landing-page-content'>
@@ -18,8 +28,8 @@ const Landing = () => {
 
         <p className='landing-short-intro'>This website is a fictional company that develops an app that provides features and services for its users.</p>
 
-        <div className='landing-page-button'>
-            <Button props={buttonData}/>
+        <div className='landing-page-button' onClick={navigateToProjects}>
+            <Button props={buttonData} />
         </div>
       </div>
 

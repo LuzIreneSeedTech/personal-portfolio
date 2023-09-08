@@ -2,6 +2,7 @@
     @include css-reset;
 }
 
+
 // header start
 .nav-container {
     padding: 10px 60px;
@@ -19,6 +20,11 @@
 
     .logo-container {
         @include logo-text-style;
+        cursor: pointer;
+    }
+
+    .logo-container:hover {
+        color: $main-color;
     }
 
     .nav-items-container {
@@ -135,6 +141,7 @@
 .about-me {
         width: 1152px;
         margin: auto;
+        scroll-margin-top: 8rem;
 
         .about-me-container {
             margin-top: 130px;
@@ -222,6 +229,7 @@
 .projects {
     width: 1152px;
     margin: auto;
+    scroll-margin-top: 8rem;
 
     .project-container {
         margin-top: 130px;
@@ -313,7 +321,9 @@
 // tools start
 .tools {
     width: 1152px;
+    height: 425px;
     margin: auto;
+    scroll-margin-top: 8rem;
 
     .tools-container {
         margin-top: 130px;
@@ -358,6 +368,7 @@
 
 // contact me start
 .contact-me {
+
     .contact-me-container {
         padding-top: 130px;
         width: 1152px;
@@ -460,6 +471,11 @@
 
         .footer-logo {
             @include logo-text-style;
+            cursor: pointer;
+        }
+
+        .footer-logo:hover {
+            color: $main-color;
         }
 
         .footer-social-container {

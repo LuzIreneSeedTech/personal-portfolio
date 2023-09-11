@@ -4,6 +4,8 @@ import EmailIcon from '../assets/email.png'
 import ContactIcon from '../assets/contact.png'
 import AddressIcon from '../assets/location.png'
 import Button from '../atoms/Button'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 const ContactMe = () => {
     const headerData = {
@@ -29,6 +31,25 @@ const ContactMe = () => {
         },
     ]
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_USER_ID)
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.target.reset();
+    };
+
   return (
     <div className='contact-me-container'>
       <div className='contact-me-header'>
@@ -50,12 +71,12 @@ const ContactMe = () => {
             }
         </div>
 
-        <div className='contact-me-form'>
-           <input type="text" placeholder='Name' />
-           <input type="text" placeholder='Email' />
-           <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+        <form className='contact-me-form' ref={form} onSubmit={sendEmail}>
+           <input type="text" placeholder='Name' required name="from_name" />
+           <input type="text" placeholder='Email' required name="from_email" />
+           <textarea name="message" id="" cols="30" rows="10" placeholder='Message' required ></textarea>
            <Button props={buttonData} />
-        </div>
+        </form>
       </div>
     </div>
   )

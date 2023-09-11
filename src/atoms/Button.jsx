@@ -12,7 +12,8 @@ const Button = ({props, ...rest}) => {
 
   return (
     <div className='main-button'>
-      <button onClick={handleClick}>{buttonLabel}</button>
+      <button onClick={handleClick} type='
+      submit' value='Send'>{buttonLabel}</button>
     </div>
   )
 }

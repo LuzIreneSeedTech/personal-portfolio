@@ -32,6 +32,7 @@ const Projects = () => {
         buttonLabel : {
           buttonLabel : 'view design'
         },
+        buttonDestination : 'https://www.figma.com/file/QDeXEAOzcWXQOAnSZyrg1R/To-Do-Web-App?type=design&node-id=0%3A1&mode=design&t=iKQ5fDppJ0UOvMGs-1',
       },
       {
         id : 2,
@@ -41,6 +42,7 @@ const Projects = () => {
         buttonLabel : {
           buttonLabel : 'view design'
         },
+        buttonDestination : 'https://www.figma.com/file/BkjtqCdgMKEYiuNN8ZyJRp/book-me-next?type=design&mode=design&t=Vx8nwaiHiOkYMppt-1',
       },
       {
         id : 3,
@@ -50,6 +52,7 @@ const Projects = () => {
         buttonLabel : {
           buttonLabel : 'view design'
         },
+        buttonDestination : 'https://www.figma.com/file/zY98x5gcJTxt0QHwO5VVKe/my-web-portfolio?type=design&node-id=0%3A1&mode=design&t=JT9qkaw6MK1vFyPx-1',
       },
       {
         id : 4,
@@ -59,6 +62,7 @@ const Projects = () => {
         buttonLabel : {
           buttonLabel : 'view app'
         },
+        buttonDestination : 'https://zuitt-to-do-app.netlify.app/',
       },
       {
         id : 5,
@@ -68,6 +72,7 @@ const Projects = () => {
         buttonLabel : {
           buttonLabel : 'view app'
         },
+        buttonDestination : 'http://google.com',
       },
       {
         id : 6,
@@ -77,6 +82,7 @@ const Projects = () => {
         buttonLabel : {
           buttonLabel : 'view portfolio'
         },
+        buttonDestination : 'http://google.com',
       },
     ]
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../atoms/Button'
 import PFP from '../assets/pfp.jpg'
+import 'animate.css'
 
 const Landing = () => {
 
@@ -35,8 +36,8 @@ const Landing = () => {
 
       <div className='landing-page-img'>
         <img src={PFP} alt="portfolio image" />
-        <h1 className='img-text-1'>l<span>uz</span></h1>
-        <h1 className='img-text-2'><span>ire</span>ne</h1>
+        <h1 className='img-text-1 animate__animated animate__bounceInDown'>l<span>uz</span></h1>
+        <h1 className='img-text-2 animate__animated animate__bounceInRight'><span>ire</span>ne</h1>
       </div>
     </div>
   )

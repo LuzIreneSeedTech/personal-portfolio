@@ -307,6 +307,9 @@
   text-transform: capitalize;
   text-align: center;
 }
+.projects .project-container .project-content .project-card-container .project-card .overlay a {
+  text-decoration: none;
+}
 .projects .project-container .project-content .project-card-container .project-card .overlay button {
   border: 1px solid #fff;
   background: none;
